@@ -11,11 +11,6 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/HEAD
 ## Setup
 
 ```
-git clone https://github.com/binder-examples/requirements.git pbp-binder
-cd pbp-binder
-rm -rf .git
-```
-```
 python3.10 -m venv venv
 source venv/bin/activate
 python -m pip install pip-tools
