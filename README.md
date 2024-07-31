@@ -8,12 +8,20 @@ Access this Binder at the following URL
 
 https://mybinder.org/v2/gh/mbari-org/pbp-binder/HEAD
 
-## Setup
+## Setup and update
 
-```
-python3.10 -m venv venv
-source venv/bin/activate
-python -m pip install pip-tools
-vi requirements.in    # to indicate mbari-pbp==x.y.z
-pip-compile           # to generate requirements.txt
-```
+- Initial setup:
+    ```
+    python3.10 -m venv venv
+    source venv/bin/activate
+    python -m pip install pip-tools
+    ```
+
+- Review/update `requirements.in` to indicate the mbari-pbp version to use,
+  and run `pip-compile` to generate/update `requirements.txt`:
+     ```
+     vi requirements.in 
+     pip-compile
+     ```
+
+- Commit and push.

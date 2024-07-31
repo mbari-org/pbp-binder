@@ -162,7 +162,7 @@ matplotlib==3.9.1
     #   noisereduce
     #   scikit-maad
     #   seaborn
-mbari-pbp==1.0.8
+mbari-pbp==1.0.11
     # via -r requirements.in
 more-itertools==10.3.0
     # via jaraco-classes
