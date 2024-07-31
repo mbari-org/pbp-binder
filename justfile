@@ -27,8 +27,8 @@ requirements:
 
 # Create and push git tag
 tag-and-push:
-  git tag v${$PBP_VERSION}
-  git push origin v${$PBP_VERSION}
+  git tag v${PBP_VERSION}
+  git push origin v${PBP_VERSION}
 
 # List most recent git tags
 tags:
