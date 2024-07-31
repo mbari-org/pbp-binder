@@ -12,7 +12,7 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/HEAD
 
 - Initial setup:
     ```
-    python3.10 -m venv venv
+    python3.11 -m venv venv
     source venv/bin/activate
     python -m pip install pip-tools
     ```
