@@ -21,6 +21,7 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/HEAD
   and run `pip-compile` to generate/update `requirements.txt`:
      ```
      vi requirements.in 
+     source venv/bin/activate
      pip-compile
      ```
 
