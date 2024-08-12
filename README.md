@@ -3,13 +3,13 @@
 > [!NOTE]
 > - Under testing/tuning.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbari-org/pbp-binder/v1.2.0b1)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbari-org/pbp-binder/v1.2.0b2)
 
-Latest version: **v1.2.0b1**
+Latest version: **v1.2.0b2**
 
 Access this Binder at the following URL
 
-https://mybinder.org/v2/gh/mbari-org/pbp-binder/v1.2.0b1
+https://mybinder.org/v2/gh/mbari-org/pbp-binder/v1.2.0b2
 
 ## Setup and update
 

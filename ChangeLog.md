@@ -1,5 +1,6 @@
 2024-08
 
+- now `v1.2.0b2` with parameter fix in the notebook.
 - Updates to use mbari-pbp 1.2.0.
     - added `HMB_generation_one_day_simple_api.ipynb` (as prepared in separate JupyterLab env) 
     - `tag-and-push` recipe adjusted to accept a suffix, eg: `just tag-and-push b1`, 
