@@ -1,6 +1,7 @@
 2024-08
 
 - Updates to use mbari-pbp 1.2.0.
+    - added `HMB_generation_one_day_simple_api.ipynb` (as prepared in separate JupyterLab env) 
 
 2024-07
 
