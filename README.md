@@ -1,10 +1,7 @@
 # PBP for mybinder.org
 
 > [!NOTE]
-> - In general, under testing/tuning.
-> - To be updated with new simplified API introduced in mbari-pbp 1.1,
->   (see [ChangeLog.md](https://github.com/mbari-org/pbp/blob/main/ChangeLog.md)).
-
+> - Under testing/tuning.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbari-org/pbp-binder/HEAD)
 
@@ -32,3 +29,15 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/HEAD
      ```
 
 - Commit and push.
+
+## Using just
+
+Using [`just`](https://just.systems), the general procedure is captured in 
+various recipes in [`justfile`](justfile), so one can proceed as follows:
+
+```
+just setup                   # one-off setup
+just prepare <pbp_version>   # captures given version in .env for other recipes to use
+just update-requirements     # updates requirements.in and requirements.txt
+just tag-and-push            # creates git tag and pushes it
+```

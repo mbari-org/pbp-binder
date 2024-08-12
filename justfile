@@ -18,7 +18,7 @@ setup:
     python -m pip install pip-tools
 
 # Update requirements.in and requirements.txt
-requirements:
+update-requirements:
     #!/usr/bin/env bash
     set -eu
     echo "mbari-pbp==$PBP_VERSION" > requirements.in

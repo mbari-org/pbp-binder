@@ -1,3 +1,7 @@
+2024-08
+
+- Updates to use mbari-pbp 1.2.0.
+
 2024-07
 
 - added notebook for NRS11 exercise
