@@ -6,7 +6,7 @@ list:
 
 # Prepare with given pbp package version
 prepare version:
-  echo "export PBP_VERSION={{version}}"  >  .env
+    echo "export PBP_VERSION={{version}}"  >  .env
 
 # Initial setup
 setup:
@@ -26,9 +26,12 @@ update-requirements:
     pip-compile
 
 # Create and push git tag
-tag-and-push:
-  git tag v${PBP_VERSION}
-  git push origin v${PBP_VERSION}
+tag-and-push suffix='':
+    #!/usr/bin/env bash
+    set -eu
+    tag="v${PBP_VERSION}{{suffix}}"
+    git tag "$tag"
+    git push origin "$tag"
 
 # List most recent git tags
 tags:
