@@ -32,7 +32,7 @@ update-requirements:
     pip-compile
 
 # Regenerate README.md based on README.in.md and preparation
-generate-readme:
+update-readme:
     sed "s/{PBP_BINDER_TAG}/$PBP_BINDER_TAG/g" README.in.md > README.md
 
 # Commit and push changes (main branch)

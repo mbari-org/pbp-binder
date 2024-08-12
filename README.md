@@ -13,7 +13,7 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/1.2.0b2
 
 ## Setup and update
 
-(See below for using [`just`](https://just.systems) for a more streamlined process.)
+(See below for a more streamlined process using [`just`](https://just.systems).)
 
 - Initial setup:
     ```
@@ -23,9 +23,9 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/1.2.0b2
     ```
 
 - Determine the tag for pbp-binder.
-  Assuming `$PBP_BINDER_TAG` captures such tag.
+  Assuming that `$PBP_BINDER_TAG` captures such tag.
 
-- Regenerate this README.md based on `README.in.md`.
+- Regenerate `README.md` based on `README.in.md`.
   (see justfile for the recipe).
 
 - Review/update `requirements.in` to indicate the mbari-pbp version to use,
@@ -47,19 +47,29 @@ Using `just`, the general procedure is captured in various recipes in
 ```
 # one-off setup:
 just setup
+```
 
+```
 # Capture settings .env for other recipes to use:                                             
 just prepare <pbp_version> <pbp_binder_version_suffix>
+```
 
+```
 # Update requirements.in and requirements.txt:
 just update-requirements
+```
 
+```
 # Regenerate README.md (based on README.in.md and .env):
-just generate-readme
+just update-readme
+```
 
+```
 # Commit and push changes (main branch)
 just commit-and-push
+```
 
+```
 # Create git tag and push it
 just tag-and-push
 ```
