@@ -1,3 +1,7 @@
+<!--
+NOTE: Do not edit README.md, but README.in.md.
+--> 
+
 # PBP for mybinder.org
 
 > [!NOTE]
@@ -22,8 +26,8 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/1.2.2
     python -m pip install pip-tools
     ```
 
-- Determine the tag for pbp-binder.
-  Assuming that `$PBP_BINDER_VERSION` captures such tag.
+- Determine the version for pbp-binder.
+  Assuming that `$PBP_BINDER_VERSION` captures such version.
 
 - Regenerate `README.md` based on `README.in.md`.
   (see justfile for the recipe).
@@ -37,7 +41,7 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/1.2.2
      ```
 
 - Do regular commit to `main` and push it.
-- Create and push resulting `$PBP_BINDER_VERSION` tag.
+- Create and push resulting `v$PBP_BINDER_VERSION` tag.
 
 ## Using just
 
@@ -50,8 +54,9 @@ just setup
 ```
 
 ```
-# Capture settings .env for other recipes to use:                                             
+# Capture settings in .env for other recipes to use:                                             
 just prepare <pbp_version> <pbp_binder_version_suffix>
+# (<pbp_binder_version_suffix> is optional)
 ```
 
 ```

@@ -55,8 +55,9 @@ just setup
 ```
 
 ```
-# Capture settings .env for other recipes to use:                                             
+# Capture settings in .env for other recipes to use:                                             
 just prepare <pbp_version> <pbp_binder_version_suffix>
+# (<pbp_binder_version_suffix> is optional)
 ```
 
 ```
