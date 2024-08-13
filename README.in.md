@@ -1,3 +1,8 @@
+<!--
+NOTE: Do not README.md, but README.IN.md.
+The former is generated from the latter.
+--> 
+
 # PBP for mybinder.org
 
 > [!NOTE]
