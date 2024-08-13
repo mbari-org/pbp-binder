@@ -42,8 +42,8 @@ commit-and-push:
 
 # Create and push git tag
 tag-and-push:
-    git tag "$PBP_BINDER_TAG"
-    git push origin "$PBP_BINDER_TAG"
+    git tag v"$PBP_BINDER_TAG"
+    git push origin v"$PBP_BINDER_TAG"
 
 # List most recent git tags
 tags:
