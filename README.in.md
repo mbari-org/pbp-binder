@@ -3,13 +3,13 @@
 > [!NOTE]
 > - Under testing/tuning.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbari-org/pbp-binder/{PBP_BINDER_TAG})
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbari-org/pbp-binder/{PBP_BINDER_VERSION})
 
-Latest version: **{PBP_BINDER_TAG}**
+Latest version: **{PBP_BINDER_VERSION}**
 
 Access this Binder at the following URL
 
-https://mybinder.org/v2/gh/mbari-org/pbp-binder/{PBP_BINDER_TAG}
+https://mybinder.org/v2/gh/mbari-org/pbp-binder/{PBP_BINDER_VERSION}
 
 ## Setup and update
 
@@ -22,8 +22,8 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/{PBP_BINDER_TAG}
     python -m pip install pip-tools
     ```
 
-- Determine the tag for pbp-binder.
-  Assuming that `$PBP_BINDER_TAG` captures such tag.
+- Determine the version for pbp-binder.
+  Assuming that `$PBP_BINDER_VERSION` captures such version.
 
 - Regenerate `README.md` based on `README.in.md`.
   (see justfile for the recipe).
@@ -37,7 +37,7 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/{PBP_BINDER_TAG}
      ```
 
 - Do regular commit to `main` and push it.
-- Create and push resulting `$PBP_BINDER_TAG` tag.
+- Create and push resulting `v$PBP_BINDER_VERSION` tag.
 
 ## Using just
 

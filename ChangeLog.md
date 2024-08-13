@@ -1,9 +1,15 @@
 2024-08
 
-- `prepare` recipe adjusted to also accept a suffix to create the tag for pbp-binder itself,
-  eg: `prepare 1.2.0 b2` prepares an env var `PBP_BINDER_TAG` with value `1.2.0b2`.
-  This env var is used by other recipes, including one to regenerate `README.md`
-  (now created from `README.in.md`), and to actually create and push the tag
+- `prepare` recipe adjusted to also accept an optional suffix to
+  create the version for pbp-binder itself,
+  eg: `prepare 1.2.2 b1` would set these env vars:
+    - `PBP_VERSION` with first argument, so `1.2.2`.
+    - `PBP_BINDER_VERSION` with value `1.2.2b1`.
+
+    If no suffix is given, then `PBP_BINDER_VERSION` is set to `PBP_VERSION`.
+    These env vars are used by other recipes, including one to regenerate `README.md`
+    (now created from `README.in.md`), and to actually create and push the tag
+
 - now `v1.2.0b2` with parameter fix in the notebook.
 - Updates to use mbari-pbp 1.2.0.
     - added `HMB_generation_one_day_simple_api.ipynb` (as prepared in separate JupyterLab env) 

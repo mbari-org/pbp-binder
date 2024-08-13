@@ -23,7 +23,7 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/1.2.2
     ```
 
 - Determine the tag for pbp-binder.
-  Assuming that `$PBP_BINDER_TAG` captures such tag.
+  Assuming that `$PBP_BINDER_VERSION` captures such tag.
 
 - Regenerate `README.md` based on `README.in.md`.
   (see justfile for the recipe).
@@ -37,7 +37,7 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/1.2.2
      ```
 
 - Do regular commit to `main` and push it.
-- Create and push resulting `$PBP_BINDER_TAG` tag.
+- Create and push resulting `$PBP_BINDER_VERSION` tag.
 
 ## Using just
 
