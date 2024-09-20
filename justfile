@@ -19,7 +19,7 @@ prepare pbp_version pbp_binder_version_suffix='':
     set -eu
     PBP_VERSION="{{pbp_version}}"
     PBP_BINDER_VERSION="${PBP_VERSION}{{pbp_binder_version_suffix}}"
-    echo "export PBP_VERSION=${PBP_VERSION}"              >  .env
+    echo "export PBP_VERSION=${PBP_VERSION}"                      >  .env
     echo "export PBP_BINDER_VERSION=${PBP_BINDER_VERSION}"       >>  .env
     cat .env
 

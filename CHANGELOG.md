@@ -1,3 +1,11 @@
+2024-09
+
+- Updates toward upcoming workshop:
+    - using latest mbari-pbp 1.4.9
+    - `NRS11/` updated with resources from our internal JupyterLab "gizo"
+      including new `SoundCoopDemo_NRS11_Haruphone.ipynb`.
+    - TODO: add `MB05/` 
+
 2024-08
 
 - `prepare` recipe adjusted to also accept an optional suffix to

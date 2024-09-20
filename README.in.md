@@ -1,5 +1,5 @@
 <!--
-NOTE: Do not README.md, but README.IN.md.
+NOTE: Do not edit README.md, but README.IN.md.
 The former is generated from the latter.
 --> 
 
@@ -18,64 +18,52 @@ https://mybinder.org/v2/gh/mbari-org/pbp-binder/{PBP_BINDER_VERSION}
 
 ## Setup and update
 
-(See below for a more streamlined process using [`just`](https://just.systems).)
+Using [`just`](https://just.systems), the general procedure is captured in
+various recipes in [`justfile`](justfile), so one can proceed as follows:
 
-- Initial setup:
+- One-off setup (to create virtual environment and install `pip-tools`):
     ```
-    python3.11 -m venv venv
-    source venv/bin/activate
-    python -m pip install pip-tools
+    just setup
     ```
 
-- Determine the version for pbp-binder.
-  Assuming that `$PBP_BINDER_VERSION` captures such version.
+- Determine the version of `mbari-pbp` to use:
+    ```
+    just prepare <pbp_version>
+    ```
 
-- Regenerate `README.md` based on `README.in.md`.
-  (see justfile for the recipe).
+    (This captures information in `.env` for other recipes to use.)
 
-- Review/update `requirements.in` to indicate the mbari-pbp version to use,
-  and run `pip-compile` to generate/update `requirements.txt`:
+    NOTE: The version for `pbp-binder` will be the same as that of `mbari-pbp`.
+    If there's a need to create a new `pbp-binder` version on top of the same `mbari-pbp` version,
+    then run the recipe with an optional suffix as 2nd argument:
+    ```
+    just prepare <pbp_version> <pbp_binder_version_suffix>
+    ```
+
+- Update `requirements.in` and (from it) also `requirements.txt`:
      ```
-     vi requirements.in 
-     source venv/bin/activate
-     pip-compile
+     just update-requirements 
      ```
 
-- Do regular commit to `main` and push it.
-- Create and push resulting `v$PBP_BINDER_VERSION` tag.
+- Regenerate `README.md` based on `README.in.md`:
+     ```
+     just update-readme
+     ```
 
-## Using just
+- Commit and push changes (main branch):
+     ```
+     just commit-and-push
+     ```
 
-Using `just`, the general procedure is captured in various recipes in
-[`justfile`](justfile), so one can proceed as follows:
+- Create git tag and push it:
+     ```
+     just tag-and-push
+     ```
 
+In short, assuming the `prepare` recipe has been run already:
 ```
-# one-off setup:
-just setup
-```
-
-```
-# Capture settings in .env for other recipes to use:                                             
-just prepare <pbp_version> <pbp_binder_version_suffix>
-# (<pbp_binder_version_suffix> is optional)
-```
-
-```
-# Update requirements.in and requirements.txt:
 just update-requirements
-```
-
-```
-# Regenerate README.md (based on README.in.md and .env):
 just update-readme
-```
-
-```
-# Commit and push changes (main branch)
 just commit-and-push
-```
-
-```
-# Create git tag and push it
 just tag-and-push
 ```
