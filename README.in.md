@@ -8,13 +8,13 @@ The former is generated from the latter.
 > [!NOTE]
 > - Under testing/tuning.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbari-org/pbp-binder/{PBP_BINDER_VERSION})
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbari-org/pbp-binder/v{PBP_BINDER_VERSION})
 
 Latest version: **{PBP_BINDER_VERSION}**
 
 Access this Binder at the following URL
 
-https://mybinder.org/v2/gh/mbari-org/pbp-binder/{PBP_BINDER_VERSION}
+https://mybinder.org/v2/gh/mbari-org/pbp-binder/v{PBP_BINDER_VERSION}
 
 ## Setup and update
 
