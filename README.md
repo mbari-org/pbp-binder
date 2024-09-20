@@ -8,13 +8,13 @@ The former is generated from the latter.
 > [!NOTE]
 > - Under testing/tuning.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbari-org/pbp-binder/v1.4.9)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mbari-org/pbp-binder/v1.5.0)
 
-Latest version: **1.4.9**
+Latest version: **1.5.0**
 
 Access this Binder at the following URL
 
-https://mybinder.org/v2/gh/mbari-org/pbp-binder/v1.4.9
+https://mybinder.org/v2/gh/mbari-org/pbp-binder/v1.5.0
 
 ## Setup and update
 
@@ -62,8 +62,5 @@ various recipes in [`justfile`](justfile), so one can proceed as follows:
 
 In short, assuming the `prepare` recipe has been run already:
 ```
-just update-requirements
-just update-readme
-just commit-and-push
-just tag-and-push
+just update-requirements update-readme commit-and-push tag-and-push
 ```

@@ -62,8 +62,5 @@ various recipes in [`justfile`](justfile), so one can proceed as follows:
 
 In short, assuming the `prepare` recipe has been run already:
 ```
-just update-requirements
-just update-readme
-just commit-and-push
-just tag-and-push
+just update-requirements update-readme commit-and-push tag-and-push
 ```
