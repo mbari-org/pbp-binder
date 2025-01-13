@@ -30,7 +30,6 @@ cffi==1.16.0
     # via
     #   cryptography
     #   soundfile
-    #   xattr
 cftime==1.6.4
     # via netcdf4
 charset-normalizer==3.3.2
@@ -54,7 +53,9 @@ crashtest==0.4.1
     #   cleo
     #   poetry
 cryptography==41.0.7
-    # via lifewatch-pypam
+    # via
+    #   lifewatch-pypam
+    #   secretstorage
 cycler==0.11.0
     # via matplotlib
 dask==2023.12.1
@@ -122,6 +123,10 @@ installer==0.7.0
     # via poetry
 jaraco-classes==3.4.0
     # via keyring
+jeepney==0.8.0
+    # via
+    #   keyring
+    #   secretstorage
 jmespath==1.0.1
     # via
     #   boto3
@@ -362,6 +367,8 @@ scipy==1.10.0
     #   scikit-maad
 seaborn==0.13.0
     # via lifewatch-pypam
+secretstorage==3.3.3
+    # via keyring
 shellingham==1.5.4
     # via poetry
 six==1.16.0
@@ -409,12 +416,10 @@ urllib3==2.2.2
     #   botocore
     #   dulwich
     #   requests
-virtualenv==20.26.3
+virtualenv==20.26.6
     # via poetry
 xarray==2023.8.0
     # via lifewatch-pypam
-xattr==1.1.0
-    # via poetry
 zipp==3.19.2
     # via importlib-metadata
 
