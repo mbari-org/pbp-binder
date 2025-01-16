@@ -237,7 +237,7 @@ partd==1.4.2
     # via dask
 pexpect==4.9.0
     # via poetry
-pillow==9.3.0
+pillow==10.3.0
     # via
     #   imageio
     #   matplotlib
