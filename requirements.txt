@@ -44,10 +44,6 @@ colorama==0.4.6
     # via awscli
 contourpy==1.0.6
     # via matplotlib
-coverage[toml]==7.6.0
-    # via
-    #   pyhydrophone
-    #   pytest-cov
 crashtest==0.4.1
     # via
     #   cleo
@@ -267,7 +263,7 @@ progressbar2==3.53.1
     # via mbari-pbp
 proto-plus==1.24.0
     # via google-api-core
-protobuf==5.27.2
+protobuf==5.29.5
     # via
     #   google-api-core
     #   googleapis-common-protos
@@ -297,12 +293,7 @@ pyproject-hooks==1.1.0
     #   build
     #   poetry
 pytest==7.4.4
-    # via
-    #   pyhydrophone
-    #   pytest-cov
-    #   syrupy
-pytest-cov==4.1.0
-    # via pyhydrophone
+    # via syrupy
 python-dateutil==2.8.2
     # via
     #   botocore
@@ -310,8 +301,6 @@ python-dateutil==2.8.2
     #   matplotlib
     #   mbari-pbp
     #   pandas
-python-dotenv==1.0.1
-    # via pyhydrophone
 python-utils==3.8.2
     # via progressbar2
 pytz==2022.6
@@ -323,7 +312,6 @@ pyyaml==6.0
     #   awscli
     #   dask
     #   mbari-pbp
-    #   pyhydrophone
 rapidfuzz==3.9.4
     # via cleo
 requests==2.32.3
